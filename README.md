@@ -32,8 +32,7 @@ Users should be able to
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://aineedtech-frontendmentor.github.io/OrderSummaryCard/)
 
 ## My process
 
