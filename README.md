@@ -1,13 +1,16 @@
 # Frontend Mentor - Order summary card solution
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+Frontend Mentor is a resource for developers looking to improve their front-end skills. The challenges help you improve your coding skills by building realistic projects using HTML, CSS, and JavaScript. 
+
+This Order Summary Card challenge is meant for Newbie who wants to practice their HTML and CSS skills.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#screenshot-of-the-final-product)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,12 +28,12 @@ Users should be able to
 
 ### Screenshot of the final product
 
-![](https://github.com/aineedtech-frontendmentor/OrderSummaryCard/blob/master/images/Screenshot.png)
+<img src="https://github.com/aineedtech-frontendmentor/OrderSummaryCard/blob/master/images/Screenshot.png" alt="drawing" width="500"/>
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://your-live-site-url.com)
 
 ## My process
 
@@ -44,7 +47,7 @@ Users should be able to
 
 ### What I learned
 
-##### Background Image
+#### 1) Background Image
 By default, background image is repeated so it covers the entire element.
 The background image can be specifies to show only once and cover the whole page by following:
 ```css
@@ -57,9 +60,8 @@ body {
 } 
 ```
 
-##### Center Div
+#### 2) Center Div
 There are several ways to center a div:
-1.
 ```css
 body {
     display: flex;
@@ -67,8 +69,7 @@ body {
     justify-content: center;
 }
 ```
-
-2. 
+ 
 ```css
 body {
     display: grid;
@@ -76,7 +77,7 @@ body {
 }
 ```
 
-##### Apply shadow to a button
+#### 3) Apply shadow to a button
 ```css
 .proceed {
     box-shadow: 0px 5px 20px hsl(224, 23%, 55%);
