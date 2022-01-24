@@ -3,144 +3,138 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
-    font-family: 'Red Hat Display', sans-serif;
-    min-height: 100vh;
+body {
+    height: 100vh;
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain;
     background-color: hsl(225, 100%, 94%);
-    position: relative;
-    font-size: 16px;
-}
-
-.container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 450px;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.text-content{
-    padding: 7%;
+    background-size: contain;
     text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 430px;
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    padding: 20px 50px;
 }
 
 .title {
-    color: hsl(223, 47%, 23%);
+    padding: 10px;
     font-weight: 900;
-    font-size: 32px;
-    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
 }
 
-.text-content p.subtitle {
-    color: #8a8a8a;
-    margin-bottom: 25px;
+.description {
+    padding: 5px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
 }
 
-.plan-box {
+.plan {
     background-color: hsl(225, 100%, 98%);
+    margin: 0 50px 10px 50px;
+    padding: 20px;
     border-radius: 12px;
     display: flex;
-    padding: 25px;
     align-items: center;
     justify-content: space-between;
 }
 
-.plan-box-left {
+.plan-left {
     display: flex;
-    align-items: center;
+}
+
+.plan-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
-}
-
-.plan-box-left div {
-    margin-left: 20px;
-}
-
-.plan-box-left div h5 {
-    font-weight: 900;
-    font-size: 15px;
-    color: hsl(223, 47%, 23%);
-}
-
-.plan-box-left div p {
+    padding: 0px 0 0px 10px;
     font-size: 14px;
-    color: #8a8a8a;
 }
 
-.plan-box a {
+.plan-left-text h4 {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    transition: color .3s ease;
 }
 
-.plan-box a:hover {
-    text-decoration: none;
+.plan-left-text p {
+    color: hsl(224, 23%, 55%);
+    padding: 2px 0;
+}
+
+.plan a {
+    font-weight: 900;
     color: hsl(245, 75%, 52%);
 }
 
-a.proceed-btn {
+.plan a:hover {
+    text-decoration: none;
+    color: hsl(245, 74%,  64%)
+}
+
+.proceed-btn, .cancel-btn {
     display: block;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
     text-decoration: none;
-    color: white;
+}
+
+.proceed-btn {
     background-color: hsl(245, 75%, 52%);
-    padding: 20px 0;
+    margin: 25px 50px 15px 50px;
+    color: white;
     border-radius: 12px;
-    margin: 30px 0;
-    transition: background-color .3s ease;
+    box-shadow: 0px 5px 20px hsl(224, 23%, 55%);
 }
 
-a.proceed-btn:hover {
-    background-color: hsl(224, 23%, 55%);
+.proceed-btn:hover {
+    background-color: hsl(245, 74%,  64%);
 }
 
-a.cancel-btn {
+.cancel-btn {
+    color: hsl(224, 23%, 55%);
+    margin: 0 0 30px 0;
+}
+
+.cancel-btn:hover {
     color: hsl(223, 47%, 23%);
-    text-decoration: none;
-    font-weight: 900;
-    transition: color .3s ease;
 }
 
-a.cancel-btn:hover {
-    color:hsl(223, 47%, 23%);
-}
-
-@media only screen and (max-width: 425px){
-    body {
-        background-image: url(images/pattern-background-mobile.svg);
+@media screen and (max-width: 420px) {
+    .container {
+        margin: auto 20px;
+        width: auto;
         font-size: 14px;
     }
-    
-    .container {
-        max-width: 87%;
+
+    .plan {
+        padding: 15px 20px;
     }
 
-    .title {
-        font-size: 23px;
-    }
-
-    div.plan-box {
-        padding: 12px;
-    }
-
-    .plan-box-left div {
-        margin-left: 10px;
-    }
-
-    a.proceed-btn,
-    a.cancel-btn,
-    .plan-box {
-        font-size: 12px;
-    }
-
-    .text-content {
-        padding: 9% 7%;
+    .plan, 
+    .proceed-btn, 
+    .cancel-btn {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 13px;
     }
 }
